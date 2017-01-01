@@ -1,4 +1,4 @@
-from sanic.response import text, json
+from sanic.response import json
 from ..base import BaseModelView
 
 class ModelView(BaseModelView):

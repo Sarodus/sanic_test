@@ -23,23 +23,3 @@ def get_random_users(number):
             email = row['email'],
             password = row['login']['sha1'],
         )
-
-
-
-
-# For multiple concurrent calls
-
-# def get_random_users(number):
-#     responses = []
-
-#     @asyncio.coroutine
-#     def _make_request():
-#         response = yield from aiohttp.request('get', API_URL)
-#         obj = (yield from response.json())
-#         responses.append(obj)
-
-#     loop = asyncio.get_event_loop()
-#     tasks = [asyncio.async(_make_request()) for _ in range(number)]
-#     loop.run_until_complete(asyncio.wait(tasks))
-
-#     return responses

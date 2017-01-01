@@ -1,5 +1,3 @@
-from sanic.response import text
-
 class BaseModelView():
 
     can_list = can_get = can_create = can_update = can_delete = True

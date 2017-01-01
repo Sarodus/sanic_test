@@ -1,5 +1,3 @@
-from sanic.response import json
-from sanic.views import HTTPMethodView
 from app.ext.api_model.sqla import ModelView
 from ..db import Session
 from ..models import User

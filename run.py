@@ -5,7 +5,7 @@ import click
 from app.base import app
 from scripts.random_users import get_random_users
 from app.db import Base, engine, Session
-from app.models import User
+
 
 SOCK_FILE = '/var/run/sanic.sock'
 
